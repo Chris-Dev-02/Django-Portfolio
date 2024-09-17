@@ -1,0 +1,18 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand" href="/">Christopher G.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog:posts' %}">Blog</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="btn btn-primary btn-sm" href="{% static 'portfolio/Worksheet.pdf' %}" target="_blank">Download CV</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
